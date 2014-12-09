@@ -147,7 +147,6 @@
             <ul class="tags">
               {% for tag in post.tags %}
                 <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
-                <li><a href="/tag/{{ tag }}">#{{ tag }} ({{ tag.count }})</a></li>
               {% endfor %}
             </ul>
             {% endif %}
@@ -192,7 +191,6 @@
             <ul class="tags">
               {% for tag in post.tags %}
                 <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
-                <li><a href="/tag/{{ tag }}">#{{ tag }} ({{ tag.count }})</a></li>
               {% endfor %}
             </ul>
             {% endif %}
@@ -290,7 +288,6 @@
             <ul class="tags">
               {% for tag in site.tags %}
                 <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
-                <li><a href="/tag/{{ tag.name }}">#{{ tag.name }} ({{ tag.count }})</a></li>
               {% endfor %}
             </ul>
             {% endif %}
