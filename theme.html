@@ -107,7 +107,7 @@
           <div class="row post">
             <div class="span6">
               <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-              <p class="muted">Posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / Updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
+              <p class="muted">posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
 
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
@@ -135,7 +135,7 @@
 
           <div class="post">
             <h1>{{ post.title }}</h1>
-            <p class="muted">Posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / Updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
+            <p class="muted">posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
 
             <div class="post-content" data-type-cleanup="true">
               {{ post.content }}
@@ -176,7 +176,7 @@
 
           <div class="post">
             <h1>{{ link.title }}</h1>
-            <p class="muted">Posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / Updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
+            <p class="muted">posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
             <div class="post-content" data-type-cleanup="true">
               {{ link.content }}
             </div>
