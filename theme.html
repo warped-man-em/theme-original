@@ -230,9 +230,17 @@
         </div>
 
         {% if not is_login %}
+
+<span class="span3 offset1">
+<div class="bio">
+<img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" />
+<div style="font-weight:bold;font-size:110%;margin-bottom:8px;">自己紹介</div>
+1978年生まれ。京都出身。DTPオペレーター。2011年結婚。2012年長女誕生。<br>Born in 1985. From Kyoto. DTP operator. Married in 2011. First daughter was born in 2012.
+</div>
+</span>
+
           <span class="span3 offset1">
             <div class="bio">
-              <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" />
               <div style="font-weight:bold;font-size:110%;margin-bottom:8px;">このブログについて</div>
               <p>{{ site.bio }}</p>
               <p>{{ theme.social.follow }}</p>
