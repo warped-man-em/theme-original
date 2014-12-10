@@ -229,6 +229,8 @@
         {% endif %}
         </div>
 
+        {% if not is_login %}
+
 <span class="span3 offset1">
 <div class="bio">
 <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" />
@@ -237,7 +239,6 @@
 </div>
 </span>
 
-        {% if not is_login %}
           <span class="span3 offset1">
             <div class="bio">
               <div style="font-weight:bold;font-size:110%;margin-bottom:8px;">このブログについて</div>
