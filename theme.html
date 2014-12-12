@@ -121,8 +121,8 @@
           {% if not is_tag %}
           {% if pagination %}
           <div class="pagination">
-            {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev"><i class="icon-arrow-left"></i> View Previous Posts</a>{% endif %}
-            {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts <i class="icon-arrow-right"></i></a>{% endif %}
+            {% if pagination.prev %}<h2><a href="{{ pagination.prev }}" class="post-prev"><i class="icon-arrow-left"></i> View Previous Posts</a></h2>{% endif %}
+            {% if pagination.next %}<h2><a href="{{ pagination.next }}" class="post-next">View More Posts <i class="icon-arrow-right"></i></a></h2>{% endif %}
           </div>
           {% endif %}
           {% endif %}
