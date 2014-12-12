@@ -310,7 +310,7 @@
 <div style="font-weight:bold;font-size:110%;margin-bottom:8px;">新着記事</div>
 {% if posts_recent %}
     {% for post in posts_recent %}
-    <a href="{{ post.permalink }}"><i class="icon-pencil"></i> {{ post.title }}</a> <small style="color:#888;">({{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }})</small><br/>
+    <a href="{{ post.permalink }}"><i class="icon-file-alt"></i> {{ post.title }}</a> <small style="color:#888;">({{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }})</small><br/>
     {% endfor %}
 {% endif %}
 </div>
