@@ -294,11 +294,11 @@
 <div class="bio">
 <div style="font-weight:bold;font-size:110%;margin-bottom:8px;">カテゴリ</div>
             {% if site.tags %}
-            <ul class="tags">
+            <div class="tags">
               {% for tag in site.tags %}
-                <li><a href="/tag/{{ tag.name }}"><i class="icon-tag"></i> {{ tag.name }}</a></li>
+                <li><a href="/tag/{{ tag.name }}"><i class="icon-tag"></i> {{ tag.name }} ({{ tag.count }})</a></li>
               {% endfor %}
-            </ul>
+            </div>
             {% endif %}
           </span>
         {% endif %}
