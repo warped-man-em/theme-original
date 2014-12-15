@@ -97,7 +97,7 @@
 
           {% if is_tag %}
           <div class="row">
-            <h4>Showing all posts tagged #{{ tag }}:</h4>
+            <h4>Showing all posts tagged <i class="icon-tag"></i> {{ tag }}:</h4>
             <hr />
           </div>
           {% endif %}
@@ -146,7 +146,7 @@
             {% if post.tags %}
             <ul class="tags">
               {% for tag in post.tags %}
-                <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
+                <li><a href="/tag/{{ tag }}"><i class="icon-tag"></i> {{ tag }}</a></li>
               {% endfor %}
             </ul>
 <!-- X:S ZenBackWidget --><div id="zenback-widget-loader"></div><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var r=Math.ceil((new Date()*1)*Math.random());var j=d.createElement("script");j.id=i;j.async=true;j.src="//w.zenback.jp/v1/?base_uri=http%3A//nogeniusem.postach.io/&nsid=126547395566670906%3A%3A126547410330612024&rand="+r;d.body.appendChild(j);}}(document,"zenback-widget-js");</script><!-- X:E ZenBackWidget -->
@@ -191,7 +191,7 @@
             {% if post.tags %}
             <ul class="tags">
               {% for tag in post.tags %}
-                <li><a href="/tag/{{ tag }}">#{{ tag }}</a></li>
+                <li><a href="/tag/{{ tag }}"><i class="icon-tag"></i> {{ tag }}</a></li>
               {% endfor %}
             </ul>
 <!-- X:S ZenBackWidget --><div id="zenback-widget-loader"></div><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var r=Math.ceil((new Date()*1)*Math.random());var j=d.createElement("script");j.id=i;j.async=true;j.src="//w.zenback.jp/v1/?base_uri=http%3A//nogeniusem.postach.io/&nsid=126547395566670906%3A%3A126547410330612024&rand="+r;d.body.appendChild(j);}}(document,"zenback-widget-js");</script><!-- X:E ZenBackWidget -->
