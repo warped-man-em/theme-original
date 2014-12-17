@@ -107,7 +107,7 @@
             <div class="span6">
               <h2>
               <a href="{{ post.permalink }}">
-              {{ post.title }}  <span style="font-size:60%;">Click for Full Text</span>
+              {{ post.title }}&nbsp;&nbsp;<span style="font-size:60%;">Click for Full Text</span>
               </a>
               </h2>
               <p class="muted">posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
