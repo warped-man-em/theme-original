@@ -106,7 +106,8 @@
           <div class="row post">
             <div class="span6">
               <h2>
-              <a href="{{ post.permalink }}">{{ post.title }} <div style="font-size:60%;">（クリックして本文を読む）</div>
+              <a href="{{ post.permalink }}">
+              {{ post.title }}<div style="font-size:50%;"> Click Here for Full Text）</div>
               </a>
               </h2>
               <p class="muted">posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
