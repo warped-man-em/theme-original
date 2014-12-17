@@ -105,7 +105,11 @@
           {% for post in posts %}
           <div class="row post">
             <div class="span6">
-              <h2><a href="{{ post.permalink }}">{{ post.title }} （クリックして本文を読む）</a></h2>
+              <h2>
+              <a href="{{ post.permalink }}">{{ post.title }} 
+              （クリックして本文を読む）
+              </a>
+              </h2>
               <p class="muted">posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
 
               <div class="post-content" data-type-cleanup="true">
