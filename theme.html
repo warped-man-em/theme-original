@@ -106,9 +106,8 @@
           <div class="row post">
             <div class="span6">
               <h2>
-              <a href="{{ post.permalink }}">
-              {{ post.title }}
-              </a><span style="font-size:60%;color:#999999;">&nbsp;&nbsp;Click for Full Text</span>
+              <a href="{{ post.permalink }}">{{ post.title }}</a>
+              <span style="font-size:60%;color:#999999;">&nbsp;&nbsp;Click Title for Full Text</span>
               </h2>
               <p class="muted">posted on {{ post.created_at|striptags|truncate(10,true,'')|replace("-","/") }} / updated on {{ post.updated_at|striptags|truncate(10,true,'')|replace("-","/") }}</p>
 
